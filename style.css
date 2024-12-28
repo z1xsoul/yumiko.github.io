@@ -1,0 +1,95 @@
+body {
+    background-image: url('https://helloartsy.com/wp-content/uploads/kids/marine_life/how_to_draw_a_dolphin/how-to-draw-a-dolphin_step-6.jpg')no-repeat center center fixed; ;
+    background-size: cover;
+    background-blend-mode: overlay;
+    text-align: center;
+    overflow-x: hidden;
+    background-size: cover; 
+    font-family: Arial, sans-serif;
+    color: #b6a720;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    margin-top: 20%;
+    
+}
+
+.title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+    color: #a81d1d;
+    animation: pulse 2s infinite;
+}
+
+.message {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.btn {
+    background-color: #00a8f7;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgb(160, 12, 12);
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    background-color: #ff69b4;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.sliding-box {
+    position: fixed;
+    top: 20%;
+    right: -300px; /* Start off-screen */
+    width: 250px;
+    padding: 15px;
+    background-color: #ffb6c1;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: right 0.5s ease-in-out; /* Smooth sliding effect */
+    z-index: 1000;
+}
+
+.sliding-text {
+    font-size: 1rem;
+    text-align: center;
+}
+
+
+.heart {
+    position: absolute;
+    color: #640735;
+    animation: float 3s infinite ease-in-out;
+}
+
+@keyframes float {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-200px);
+    }
+}
